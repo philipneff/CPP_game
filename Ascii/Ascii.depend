@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1552445943 source:/home/philneff/gitstuff/CPP_game/Ascii/main.cpp
+	<iostream>
+	"kobold.h"
+	<string>
+	"Monster.h"
+
+1552445126 source:/home/philneff/gitstuff/CPP_game/Ascii/src/Monster.cpp
+	"Monster.h"
+	<iostream>
+	<string>
+
+1552445860 /home/philneff/gitstuff/CPP_game/Ascii/include/Monster.h
+	"char_modifiers.h"
+	<iostream>
+	<string>
+
+1552445572 /home/philneff/gitstuff/CPP_game/Ascii/include/char_modifiers.h
+
+1552445967 source:/home/philneff/gitstuff/CPP_game/Ascii/src/kobold.cpp
+	"kobold.h"
+	<iostream>
+	<string>
+
+1552445739 /home/philneff/gitstuff/CPP_game/Ascii/include/kobold.h
+	"Monster.h"
+
