@@ -32,7 +32,7 @@ To Be Added
 
 
 
-## Note for formatting purposes
+## Notes for formatting purposes
 
 ```
 
