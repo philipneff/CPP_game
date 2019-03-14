@@ -1,8 +1,8 @@
-#Readme
+# Readme
 
-#Project
+## Project
 Create a ASCII RPG game in console using C++.
 
-#Contributors
+## Contributors
 @PhilipNeff
 @DavinSalo
