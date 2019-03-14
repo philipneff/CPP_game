@@ -9,18 +9,18 @@ Create a ASCII RPG game in console using C++.
 @DavinSalo
 
 ## How to launch
-The provided code does not include a working game from the box. The compiled version of the game needs to be compiled on your machine (is this accurate for cpp?).
+The provided code does not include a working game from the onset. The game needs to be compiled on your machine.
 
-In order to compile the game, run the provided MakeFile by opening your console of preference in the Ascii directory and typing the following:
+In order to compile the game open your console of preference in the same directory as README.md and type the following:
 
 ```
-To Be Added
+To Be Added, scons script or Makefile?
 ```
 
 To play the game:
 
 ```
-To Be Added
+To Be Added, run the executable created or add a subscript "make play" or "make run"
 ```
 
 
