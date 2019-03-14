@@ -13,15 +13,15 @@ The provided code does not include a working game from the box. The compiled ver
 
 In order to compile the game, run the provided MakeFile by opening your console of preference in the Ascii directory and typing the following:
 
-'''
+```
 To Be Added
-'''
+```
 
 To play the game:
 
-'''
+```
 To Be Added
-'''
+```
 
 
 
@@ -34,7 +34,12 @@ To Be Added
 
 ## Note for formatting purposes
 
-'''
+```
+
+\```
+Code block
+\```
+
 **Bold**
 
 __AlsoBold__
@@ -63,4 +68,4 @@ __AlsoBold__
 - [ ] Task 2 (unchecked box)
 - [ ] Task 3
 
-'''
+```
