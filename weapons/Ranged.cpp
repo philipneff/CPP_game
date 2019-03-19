@@ -4,9 +4,5 @@
 
 Ranged::Ranged()
 {
-   setType();
-}
-void Ranged::setType()
-{
-    type_="ranged";
+  
 }

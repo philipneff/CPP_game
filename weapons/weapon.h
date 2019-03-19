@@ -9,6 +9,9 @@
 class Weapon
 {
     public:
+
+        Weapon();
+        virtual ~Weapon();
       
         virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;
@@ -20,11 +23,11 @@ class Weapon
         virtual void setAttributeDamageBonus(int)=0;
 
         virtual void setAttributeToHitBonus(int)=0;
-        virtual int getAttributeToHitBonus(int)=0;
+        virtual int getAttributeToHitBonus()=0;
 
         virtual void setEffect(std::string)=0;
         virtual int getEffectBonus()=0;
-        virtual void setEffectBonus()=0;
+        virtual void setEffectBonus(int)=0;
 
 
        
