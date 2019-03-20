@@ -14,13 +14,17 @@ The provided code does not include a working game from the onset. The game needs
 In order to compile the game open your console of preference in the same directory as README.md and type the following:
 
 ```
+
 To Be Added, scons script or Makefile?
+
 ```
 
 To play the game:
 
 ```
+
 To Be Added, run the executable created or add a subscript "make play" or "make run"
+
 ```
 
 
@@ -72,9 +76,9 @@ __AlsoBold__
 
 ## Results in:
 
-\```
+```
 Code block
-\```
+```
 
 **Bold**
 
@@ -102,4 +106,4 @@ __AlsoBold__
      
 - [x] Task 1 (checked box)
 - [ ] Task 2 (unchecked box)
-- [ ] Task 3
+- [ ] Task 3 (unchecked box)
