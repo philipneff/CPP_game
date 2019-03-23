@@ -7,7 +7,7 @@
 #include "../melee.h"
 #include <iostream>
 #include <string>
-
+#include "weaponEnum.h"
 
 #ifndef WEAPONS_MELEE_MACE_H_
 #define WEAPONS_MELEE_MACE_H_
@@ -43,11 +43,12 @@ class mace: public melee
 	int attributeDamageBonus_;
 	int attributeToHitBonus_;
 	  //this will be drawn from an enum (poison, ice, fire etc...)
-	std::string effect_;
+	effectBonus effect_;
 	int effectBonus_;
+	damageType damageType_= BLUNT;
+
 	int range_=1;
-	int speed_=5;
-	std::string damageType_ ="blunt";
+	int speed_=3;
 	};
 
 #endif /* WEAPONS_MELEE_MACE_H_ */
