@@ -1,0 +1,4 @@
+
+
+env = Environment() #initialize the build Environment
+env.Program(target = 'main', source = 'main.cpp')

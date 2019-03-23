@@ -4,5 +4,5 @@
 
 Ranged::Ranged()
 {
-  
+ dfgd 
 }

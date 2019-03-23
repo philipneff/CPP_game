@@ -3,9 +3,8 @@
 
 
 
-Bow::Bow()
-   :Ranged()
-   {}
+Bow::Bow(){}
+ 
 
 Bow::Bow(int damageBonus, int hitBonus, std::string effect, int effectBonus)
    :Ranged()
@@ -23,7 +22,7 @@ void Bow::setDamageMax(int i){damageMax_=j;}
 int Bow::getAttributeDamageBonus() {return attributeDamageBonus_;}
 void Bow::setAttributeDamageBonus(int i){attributeDamageBonus_=i;}
 
-void Bow::setAttributeToHitBonus(int i){attributeToHitBonus_=i}
+void Bow::setAttributeToHitBonus(int i){attributeToHitBonus_=i;}
 int Bow::getAttributeToHitBonus(int){ return attributeToHitBonus_;}
 
 void Bow::setEffect(std::string effect){ effect_=effect;}
