@@ -1,17 +1,13 @@
-#ifndef WEAPON_H
-#define WEAPON_H
-//this is going to be an interface
-#include <iostream>
-#include <string>
+#ifndef RANGED_H
+#define RANGED_H
 
-
-
-class weapon
+#include "weapon.h"
+#
+class ranged : public weapon
 {
-    public:
-		weapon();
-		virtual ~weapon();
-      
+    public: 
+        ranged();
+        ~ranged();
         virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;
 
@@ -28,17 +24,11 @@ class weapon
         virtual int getEffectBonus()=0;
         virtual void setEffectBonus(int)=0;
 
-
-       
-
-
-        
     private:
-      
+    std::string type_="ranged";
 };
 
 
 
 
-
-#endif 
+#endif

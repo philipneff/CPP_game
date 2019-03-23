@@ -1,18 +1,14 @@
-#ifndef WEAPON_H
-#define WEAPON_H
-//this is going to be an interface
-#include <iostream>
-#include <string>
+#ifndef MELEE_H
+#define MELEE_H
 
-
-
-class weapon
+#include "weapon.h"
+#
+class melee : public weapon
 {
-    public:
-		weapon();
-		virtual ~weapon();
-      
-        virtual int getDamageMin()=0;
+    public: 
+        melee();
+        ~melee();
+        virtual int getDamageMin();
         virtual void setDamageMin(int)=0;
 
         virtual int getDamageMax()=0;
@@ -28,17 +24,11 @@ class weapon
         virtual int getEffectBonus()=0;
         virtual void setEffectBonus(int)=0;
 
-
-       
-
-
-        
     private:
-      
+    std::string type_="melee";
 };
 
 
 
 
-
-#endif 
+#endif

@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
-
+#include "ranged.h"
 #include "weapon.h"
+#include "bow.h"
+#include<string>
 
 
 int main ()
