@@ -12,6 +12,8 @@
 #include <iostream>
 #include <string>
 
+#include "../weaponEnum.h"
+
 class sword : public melee
 {
 public:
@@ -42,12 +44,13 @@ int damageMax_=6;
   //any pure magic bonus - ie..sword +3 would  return 3
 int attributeDamageBonus_;
 int attributeToHitBonus_;
-  //this will be drawn from an enum (poison, ice, fire etc...)
-std::string effect_;
+  //this will be drawn from an enum (poison, ice, fire etc..)
+effectBonus effect_;
 int effectBonus_;
+damageType damageType_= SLASHING;
+
 int range_=1;
 int speed_=3;
-std::string damageType_ ="slashing";
 };
 
 #endif /* WEAPONS_MELEE_SWORD_H_ */
