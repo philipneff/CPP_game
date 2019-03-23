@@ -1,6 +1,15 @@
-#include "../ranged/bow.h"
+/*
+ * mace.cpp
+ *
+ *  Created on: Mar. 23, 2019
+ *      Author: philneff
+ */
 
-		bow::bow(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
+#include "../melee/mace.h"
+
+
+
+		mace::mace(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
 			:attributeDamageBonus_(attributeDamageBonus)
 			,attributeToHitBonus_(attributeToHitBonus)
 			,effect_(effect)
@@ -9,54 +18,55 @@
 
 		}
 
-        int bow::getDamageMin()
+        int mace::getDamageMin()
         {
         	return damageMin_;
         }
-        void bow::setDamageMin(int damMin)
+        void mace::setDamageMin(int damMin)
         {
         	damageMin_= damMin;
         }
 
-        int bow::getDamageMax()
+        int mace::getDamageMax()
         {
         	return damageMax_;
         }
-        void bow::setDamageMax(int damMax)
+        void mace::setDamageMax(int damMax)
         {
         	damageMax_= damMax;
         }
 
-        int bow::getAttributeDamageBonus()
+        int mace::getAttributeDamageBonus()
         {
         	return attributeDamageBonus_;
         }
-        void bow::setAttributeDamageBonus(int attDamBon)
+        void mace::setAttributeDamageBonus(int attDamBon)
         {
         	attributeDamageBonus_= attDamBon;
         }
 
-        int bow::getAttributeToHitBonus()
+        int mace::getAttributeToHitBonus()
         {
         	return attributeToHitBonus_;
         }
 
 
-        void bow::setAttributeToHitBonus(int setAttBon)
+        void mace::setAttributeToHitBonus(int setAttBon)
         {
         	attributeToHitBonus_=setAttBon;
         }
 
-        void bow::setEffect(std::string effectType)
+        void mace::setEffect(std::string effectType)
         {
         	effect_=effectType;
         }
 
-        int bow::getEffectBonus()
+        int mace::getEffectBonus()
         {
         	return effectBonus_;
         }
-        void bow::setEffectBonus(int effectBonus)
+
+        void mace::setEffectBonus(int effectBonus)
         {
         	effectBonus_=effectBonus;
         }

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Ranged.h"
+#include "ranged.h"
 #include "weapon.h"
 #include "bow.h"
 #include<string>

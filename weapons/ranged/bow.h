@@ -10,7 +10,7 @@
 class bow : public ranged
 {
     public:
-        bow(int, int, std::string, int);
+        bow(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus);
 
         int getDamageMin() override;
         void setDamageMin(int) override;
@@ -42,6 +42,7 @@ class bow : public ranged
     int effectBonus_;  
     int range_=4;
     int speed_=3;
+    std::string damageType_="piercing";
 };
 
 

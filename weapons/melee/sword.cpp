@@ -1,6 +1,15 @@
-#include "../ranged/bow.h"
+/*
+ * sword.cpp
+ *
+ *  Created on: Mar. 23, 2019
+ *      Author: philneff
+ */
 
-		bow::bow(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
+#include "../melee/sword.h"
+
+
+
+		sword::sword(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
 			:attributeDamageBonus_(attributeDamageBonus)
 			,attributeToHitBonus_(attributeToHitBonus)
 			,effect_(effect)
@@ -9,54 +18,55 @@
 
 		}
 
-        int bow::getDamageMin()
+        int sword::getDamageMin()
         {
         	return damageMin_;
         }
-        void bow::setDamageMin(int damMin)
+        void sword::setDamageMin(int damMin)
         {
         	damageMin_= damMin;
         }
 
-        int bow::getDamageMax()
+        int sword::getDamageMax()
         {
         	return damageMax_;
         }
-        void bow::setDamageMax(int damMax)
+        void sword::setDamageMax(int damMax)
         {
         	damageMax_= damMax;
         }
 
-        int bow::getAttributeDamageBonus()
+        int sword::getAttributeDamageBonus()
         {
         	return attributeDamageBonus_;
         }
-        void bow::setAttributeDamageBonus(int attDamBon)
+        void sword::setAttributeDamageBonus(int attDamBon)
         {
         	attributeDamageBonus_= attDamBon;
         }
 
-        int bow::getAttributeToHitBonus()
+        int sword::getAttributeToHitBonus()
         {
         	return attributeToHitBonus_;
         }
 
 
-        void bow::setAttributeToHitBonus(int setAttBon)
+        void sword::setAttributeToHitBonus(int setAttBon)
         {
         	attributeToHitBonus_=setAttBon;
         }
 
-        void bow::setEffect(std::string effectType)
+        void sword::setEffect(std::string effectType)
         {
         	effect_=effectType;
         }
 
-        int bow::getEffectBonus()
+        int sword::getEffectBonus()
         {
         	return effectBonus_;
         }
-        void bow::setEffectBonus(int effectBonus)
+
+        void sword::setEffectBonus(int effectBonus)
         {
         	effectBonus_=effectBonus;
         }

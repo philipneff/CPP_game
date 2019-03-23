@@ -1,14 +1,14 @@
-#ifndef RANGED_H
-#define RANGED_H
+#ifndef MELEE_H
+#define MELEE_H
 
 #include "weapon.h"
 #
-class ranged : public weapon
+class melee : public weapon
 {
     public: 
-        ranged();
-        ~ranged();
-        virtual int getDamageMin()=0;
+        melee();
+        ~melee();
+        virtual int getDamageMin();
         virtual void setDamageMin(int)=0;
 
         virtual int getDamageMax()=0;
@@ -25,7 +25,7 @@ class ranged : public weapon
         virtual void setEffectBonus(int)=0;
 
     private:
-    std::string type_="ranged";
+    std::string type_="melee";
 };
 
 
