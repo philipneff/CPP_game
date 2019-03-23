@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include "../ranged.h"
+#include "weaponEnum.h"
 
 class bow : public ranged
 {
@@ -38,11 +39,12 @@ class bow : public ranged
     int attributeDamageBonus_;
     int attributeToHitBonus_;
       //this will be drawn from an enum (poison, ice, fire etc...)
-    std::string effect_;
-    int effectBonus_;  
-    int range_=4;
+    effectBonus effect_;
+    int effectBonus_;
+    damageType damageType_= PIERCING;
+
+    int range_=1;
     int speed_=3;
-    std::string damageType_="piercing";
 };
 
 
