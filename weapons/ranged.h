@@ -3,12 +3,12 @@
 
 #include "weapon.h"
 #
-class Ranged : public Weapon
+class ranged : public weapon
 {
     public: 
-        Ranged();
-        virtual ~Ranged();
-        virtual int getDamageMin()=0;
+        ranged();
+        ~ranged();
+        virtual int getDamageMin();
         virtual void setDamageMin(int)=0;
 
         virtual int getDamageMax()=0;
@@ -25,7 +25,6 @@ class Ranged : public Weapon
         virtual void setEffectBonus(int)=0;
 
     private:
-    
     std::string type_="ranged";
 };
 

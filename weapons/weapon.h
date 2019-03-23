@@ -6,12 +6,11 @@
 
 
 
-class Weapon
+class weapon
 {
     public:
-
-        Weapon();
-        virtual ~Weapon();
+		weapon();
+		virtual ~weapon();
       
         virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;

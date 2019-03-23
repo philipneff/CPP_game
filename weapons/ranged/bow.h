@@ -1,22 +1,18 @@
 #ifndef BOW_H
 #define BOW_H
 
-#include "Ranged.h"
 #include "weapon.h"
 
 #include <iostream>
 #include <string>
+#include "../ranged.h"
 
-class Bow : public Ranged
+class bow : public ranged
 {
     public:
+        bow(int, int, std::string, int);
 
-        Bow();
-        Bow(int, int, std::string, int);
-        ~Bow();
-
-        
-        int getDamageMin()  override;
+        int getDamageMin() override;
         void setDamageMin(int) override;
 
         int getDamageMax() override;
@@ -32,7 +28,10 @@ class Bow : public Ranged
         int getEffectBonus() override;
         void setEffectBonus(int) override;
 
+
+
     private:
+
     int damageMin_=1;
     int damageMax_=6;
       //any pure magic bonus - ie..sword +3 would  return 3
@@ -40,9 +39,9 @@ class Bow : public Ranged
     int attributeToHitBonus_;
       //this will be drawn from an enum (poison, ice, fire etc...)
     std::string effect_;
-    int effectBonus_; 
-    int speed;
-    int range_; 
+    int effectBonus_;  
+    int range_=4;
+    int speed_=3;
 };
 
 
