@@ -17,7 +17,8 @@ enum effectBonus
 	EARTH,
 	WATER,
 	WIND,
-	HOLY
+	HOLY,
+	NONE
 
 };
 

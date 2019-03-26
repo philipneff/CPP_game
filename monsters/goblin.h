@@ -1,6 +1,9 @@
 /*
  * goblin.h
  *
+ * @TODO
+ * will be subclassed - ideas? peon, warrior, shaman, chief, warlord etc...
+ *
  *  Created on: Mar. 23, 2019
  *      Author: philneff
  */

@@ -4,7 +4,8 @@
 
 enum monsterType
 {
-	GOBLIN
+	GOBLIN,
+	ORC
 
 };
 

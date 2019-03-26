@@ -2,13 +2,15 @@
 #define MELEE_H
 
 #include "weapon.h"
-#
+#include "weaponEnum.h"
+#include <iostream>
+#include <string>
 class melee : public weapon
 {
     public: 
-        melee();
-        ~melee();
-        virtual int getDamageMin();
+        //melee();
+        virtual ~melee(){};
+        virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;
 
         virtual int getDamageMax()=0;
@@ -20,7 +22,9 @@ class melee : public weapon
         virtual void setAttributeToHitBonus(int)=0;
         virtual int getAttributeToHitBonus()=0;
 
-        virtual void setEffect(std::string)=0;
+        virtual void setEffect(effectBonus effect)=0;
+        virtual effectBonus getEffect()=0;
+
         virtual int getEffectBonus()=0;
         virtual void setEffectBonus(int)=0;
 

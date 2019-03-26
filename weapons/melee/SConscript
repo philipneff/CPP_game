@@ -1,0 +1,10 @@
+
+Import ('env')
+
+
+file_list=[]
+
+file_list.extend(['sword.cpp',
+					'mace.cpp'])
+env.Append(CPPPATH = ['../../', '../' ])
+Library('melee',source=file_list)

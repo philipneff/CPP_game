@@ -8,7 +8,7 @@
 #ifndef WEAPONS_MELEE_SWORD_H_
 #define WEAPONS_MELEE_SWORD_H_
 
-#include "melee.h"
+#include "../melee.h"
 #include <iostream>
 #include <string>
 
@@ -17,7 +17,8 @@
 class sword : public melee
 {
 public:
-    sword(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus);
+    sword(int attributeDamageBonus, int attributeToHitBonus, effectBonus effect, int effectBonus);
+    ~sword();
 
     int getDamageMin() override;
     void setDamageMin(int) override;
@@ -31,7 +32,10 @@ public:
     void setAttributeToHitBonus(int) override;
     int getAttributeToHitBonus() override;
 
-    void setEffect(std::string) override;
+    void setEffect(effectBonus effect) override;
+    effectBonus getEffect() override;
+
+
     int getEffectBonus() override;
     void setEffectBonus(int) override;
 
@@ -39,18 +43,18 @@ public:
 
 private:
 
-int damageMin_=1;
-int damageMax_=6;
+int damageMin_ = 1;
+int damageMax_ = 16;
   //any pure magic bonus - ie..sword +3 would  return 3
 int attributeDamageBonus_;
 int attributeToHitBonus_;
   //this will be drawn from an enum (poison, ice, fire etc..)
 effectBonus effect_;
 int effectBonus_;
-damageType damageType_= SLASHING;
+damageType damageType_ = SLASHING;
 
-int range_=1;
-int speed_=3;
+int range_ = 1;
+int speed_ = 3;
 };
 
 #endif /* WEAPONS_MELEE_SWORD_H_ */

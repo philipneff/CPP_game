@@ -1,6 +1,7 @@
 #include "../ranged/bow.h"
+#include "../weaponEnum.h"
 
-		bow::bow(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
+		bow::bow(int attributeDamageBonus, int attributeToHitBonus, effectBonus effect, int effectBonus)
 			:attributeDamageBonus_(attributeDamageBonus)
 			,attributeToHitBonus_(attributeToHitBonus)
 			,effect_(effect)
@@ -8,6 +9,8 @@
 		{
 
 		}
+
+		bow::~bow(){}
 
         int bow::getDamageMin()
         {
@@ -47,10 +50,16 @@
         	attributeToHitBonus_=setAttBon;
         }
 
-        void bow::setEffect(std::string effectType)
+        void bow::setEffect(effectBonus effect)
         {
-        	effect_=effectType;
+        	effect_=effect;
         }
+
+        effectBonus bow::getEffect()
+        {
+        	return effect_;
+        }
+
 
         int bow::getEffectBonus()
         {
@@ -60,3 +69,6 @@
         {
         	effectBonus_=effectBonus;
         }
+
+
+

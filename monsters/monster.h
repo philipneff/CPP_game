@@ -11,7 +11,16 @@
 class monster {
 public:
 	monster();
-	~monster();
+	virtual ~monster();
+
+	virtual int getMinDam()=0;
+	virtual void setMinDam(int)=0;
+
+	virtual int getHitPoints()=0;
+	virtual void setHitPoints(int)=0;
+
+	virtual int getNumAtt()=0;
+	virtual void setNumAtt()=0;
 };
 
 #endif /* MONSTERS_MONSTER_H_ */
