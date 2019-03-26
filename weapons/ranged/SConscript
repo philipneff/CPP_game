@@ -1,0 +1,9 @@
+
+Import ('env')
+
+
+file_list=[]
+
+file_list.extend(['bow.cpp'])
+env.Append(CPPPATH = ['../../', '../' ])
+Library('ranged',source=file_list)

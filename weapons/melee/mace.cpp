@@ -9,7 +9,7 @@
 
 
 
-		mace::mace(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
+		mace::mace(int attributeDamageBonus, int attributeToHitBonus, effectBonus effect, int effectBonus)
 			:attributeDamageBonus_(attributeDamageBonus)
 			,attributeToHitBonus_(attributeToHitBonus)
 			,effect_(effect)
@@ -17,6 +17,8 @@
 		{
 
 		}
+
+		mace::~mace(){}
 
         int mace::getDamageMin()
         {
@@ -56,10 +58,16 @@
         	attributeToHitBonus_=setAttBon;
         }
 
-        void mace::setEffect(std::string effectType)
+        void mace::setEffect(effectBonus effect)
         {
-        	effect_=effectType;
+        	effect_=effect;
         }
+
+        effectBonus mace::getEffect()
+             {
+             	return effect_;
+             }
+
 
         int mace::getEffectBonus()
         {

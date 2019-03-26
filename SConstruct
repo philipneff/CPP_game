@@ -8,23 +8,30 @@
 
 env = Environment() #initialize the build Environment
 
-include_path = '~/gitwork/Cpp_game/weapons'
+
+env.Append(CPPPATH = ['./weapons/', './weapons/ranged/', './weapons/melee/' ])
+
+script_locations=['./weapons/ranged/', './weapons/melee/']
+
+SConscript(dirs=script_locations,
+			duplicate=True,
+			exports="env")
 
 
-#@TODO -> this is for my system...can't seem to get a relative link
-#would prefer it is just '/weapons' then we can pull from anywhere and run.
-
-env.Append(CPPPATH = ['./weapons'])
-env.Append(CPPPATH= ['./weapons/Ranged'])
-env.Append(CPPPATH= ['./weapons/Ranged/Bow.cpp'])
-#env.Append(CPPPATH= ['/home/philneff/gitwork/CPP_game/'])
-env.VariantDir('weapons/Ranged', 'weapons')
-#env.Sconscript(['weapons/ranged/Sconscript'])
-env.Sconscript('%s/weapons' %modeDir, {'env',env})
-env.Sconscript('%s/weapons/Ranged' %modeDir, {'env',env})
-
-#print env.Dump()
 sources = ['main.cpp']
-env.Program(target = 'CatBalls', source = ['main.cpp'])
+#add any libraries here
+library_names =['ranged', 
+				'melee']
+
+
+
+
+
+
+#add any new folder paths here
+library_paths =['./weapons/ranged/', 
+				'./weapons/melee/']
+
+env.Program(target = 'CatBalls', source = sources, LIBS = library_names,LIBPATH = library_paths)
 
 

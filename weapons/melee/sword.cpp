@@ -9,7 +9,7 @@
 
 
 
-		sword::sword(int attributeDamageBonus, int attributeToHitBonus, std::string effect, int effectBonus)
+		sword::sword(int attributeDamageBonus, int attributeToHitBonus, effectBonus effect, int effectBonus)
 			:attributeDamageBonus_(attributeDamageBonus)
 			,attributeToHitBonus_(attributeToHitBonus)
 			,effect_(effect)
@@ -17,6 +17,8 @@
 		{
 
 		}
+
+		sword::~sword(){}
 
         int sword::getDamageMin()
         {
@@ -56,10 +58,16 @@
         	attributeToHitBonus_=setAttBon;
         }
 
-        void sword::setEffect(std::string effectType)
+        void sword::setEffect(effectBonus effect)
         {
-        	effect_=effectType;
+        	effect_=effect;
         }
+
+        effectBonus sword::getEffect()
+        {
+           return effect_;
+        }
+
 
         int sword::getEffectBonus()
         {

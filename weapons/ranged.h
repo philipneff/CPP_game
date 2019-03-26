@@ -2,12 +2,13 @@
 #define RANGED_H
 
 #include "weapon.h"
-#
+#include "weaponEnum.h"
 class ranged : public weapon
 {
     public: 
-        ranged();
-        ~ranged();
+        //ranged();
+        virtual ~ranged(){}
+
         virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;
 
@@ -20,7 +21,9 @@ class ranged : public weapon
         virtual void setAttributeToHitBonus(int)=0;
         virtual int getAttributeToHitBonus()=0;
 
-        virtual void setEffect(std::string)=0;
+        virtual void setEffect(effectBonus effect)=0;
+        virtual effectBonus getEffect()=0;
+
         virtual int getEffectBonus()=0;
         virtual void setEffectBonus(int)=0;
 

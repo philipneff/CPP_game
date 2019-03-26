@@ -4,13 +4,13 @@
 #include <iostream>
 #include <string>
 
-
+#include"weaponEnum.h"
 
 class weapon
 {
     public:
-		weapon();
-		virtual ~weapon();
+		//weapon();
+		virtual ~weapon(){};
       
         virtual int getDamageMin()=0;
         virtual void setDamageMin(int)=0;
@@ -24,7 +24,9 @@ class weapon
         virtual void setAttributeToHitBonus(int)=0;
         virtual int getAttributeToHitBonus()=0;
 
-        virtual void setEffect(std::string)=0;
+        virtual void setEffect(effectBonus effect)=0;
+        virtual effectBonus getEffect()=0;
+
         virtual int getEffectBonus()=0;
         virtual void setEffectBonus(int)=0;
 
