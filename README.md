@@ -10,7 +10,9 @@ Create a ASCII RPG game in console using C++.
 
 ## How to build the game
 
-We are using [Scons](https://wiki.appcelerator.org/m/mobile.action#page/29004846), a python based "Makefile". Download and follow the instructions in their readme to get Scons installed. You will need python to be on your system already (version 3.5.*) or greater work.
+We are using [Scons](https://wiki.appcelerator.org/m/mobile.action#page/29004846), a python based "Makefile". 
+
+Download and follow the instructions in their readme to get Scons installed. You will need python to be on your system already (check documentation).
 
 From there, open a terminal in the root directory (the same one as README.md) of the project. Type the following:
 
