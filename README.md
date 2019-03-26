@@ -15,7 +15,7 @@ In order to compile the game open your console of preference in the same directo
 
 ```
 
-To Be Added, scons script or Makefile?
+To Be Added, scons script or Makefile(linux only)?
 
 ```
 
