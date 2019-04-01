@@ -1,18 +1,25 @@
 /*
- * monster.h
+ * goblin.h
+ *
+ * @TODO
+ * will be subclassed - ideas? peon, warrior, shaman, chief, warlord etc...
  *
  *  Created on: Mar. 23, 2019
  *      Author: philneff
  */
-#include "../gameplay/level.h"
 
-#ifndef MONSTERS_MONSTER_H_
-#define MONSTERS_MONSTER_H_
+#ifndef MONSTERS_GOBLIN_H_
+#define MONSTERS_GOBLIN_H_
+#include <iostream>
+#include <string>
+#include "../monsterEnum.h"
+#include "../../gameplay/level.h"
+#include "../monster.h"
 
-class monster {
+class goblin: public monster {
 public:
-	monster();
-	virtual ~monster();
+	goblin();
+	~goblin();
 
 	virtual int getMinDam()=0;
 	virtual void setMinDam(int)=0;
@@ -35,8 +42,14 @@ public:
 
 private:
 
+int minDamage_=1;
+int maxDamage_=4;
 
+monsterType type_= GOBLIN;
+level::position location_;
+int hitPoints_;
+int speed_;
 
 };
 
-#endif /* MONSTERS_MONSTER_H_ */
+#endif /* MONSTERS_GOBLIN_H_ */

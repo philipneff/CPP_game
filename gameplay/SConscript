@@ -1,0 +1,9 @@
+
+Import ('env')
+
+
+file_list=[]
+
+file_list.extend(['level.cpp'])
+env.Append(CPPPATH = ['../' ])
+Library('gameplay',source=file_list)
