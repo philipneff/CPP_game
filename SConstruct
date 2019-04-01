@@ -9,9 +9,14 @@
 env = Environment() #initialize the build Environment
 
 
-env.Append(CPPPATH = ['./weapons/', './weapons/ranged/', './weapons/melee/' ])
+env.Append(CPPPATH = ['./weapons/', 
+					  './weapons/ranged/', 
+					  './weapons/melee/',
+					  './gameplay' ])
 
-script_locations=['./weapons/ranged/', './weapons/melee/']
+script_locations=[	'./weapons/ranged/', 
+					'./weapons/melee/',
+					'./gameplay']
 
 SConscript(dirs=script_locations,
 			duplicate=True,
@@ -21,7 +26,8 @@ SConscript(dirs=script_locations,
 sources = ['main.cpp']
 #add any libraries here
 library_names =['ranged', 
-				'melee']
+				'melee',
+				'gameplay']
 
 
 
@@ -30,7 +36,8 @@ library_names =['ranged',
 
 #add any new folder paths here
 library_paths =['./weapons/ranged/', 
-				'./weapons/melee/']
+				'./weapons/melee/',
+				'./gameplay']
 
 env.Program(target = 'CatBalls', source = sources, LIBS = library_names,LIBPATH = library_paths)
 
