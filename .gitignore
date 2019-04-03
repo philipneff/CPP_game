@@ -3,8 +3,8 @@
 # ignore all logs
 *.log
 
-# ignore all object files (compiled object code, or .o files)
-*.o
+# ignore all object files (compiled object code)
+*.[oa]
 
 # ignore build output directories
 /bin
