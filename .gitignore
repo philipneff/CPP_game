@@ -1,4 +1,5 @@
 # Please ignore your own custom IDE setups in the .git/info/exclude directory in your local git repository. Not all builds are happening in the same environment.
+.vs
 
 # ignore all logs
 *.log
@@ -15,8 +16,8 @@
 .DS_Store
 Thumbs.db
 
-# ignore scons directory
+# ignore scons compilation file
 .sconsign.dblite
 
-# ignore executables (will have to be compiled locally anyways)
+# ignore executables (will have to be compiled locally anyways for alternate operating systems)
 *.exe
