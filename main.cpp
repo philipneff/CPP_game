@@ -14,7 +14,7 @@ int main ()
 	level::level current;
 	current.loadLevel("/home/philneff/gitwork/CPP_game/levels/level1.txt");
 	current.drawLevel();
-	current.findOnLevel('@');
+	current.findOnLevel('F');
     std::cout << "this is the game" << std::endl;
     bow b(4,5,HOLY, 6);
     std::cout<<dice::d100()<<std::endl;
