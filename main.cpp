@@ -6,13 +6,17 @@
 #include <fstream>
 #include "level.h"
 #include "./gameplay/dice.h"
-
+#include "./gamestate/gamestate.h"
 
 int main ()
 {
-	srand(time(0));
+    // Tracks the current level, player position,  
+    //
+    //gamestate::gamestate gamestate;
+
+    srand(time(0));
 	level::level current;
-	current.loadLevel("/home/philneff/gitwork/CPP_game/levels/level1.txt");
+	current.loadLevel("/home/student/Desktop/CPP_game/levels/level1.txt");
 	current.drawLevel();
 	current.findOnLevel('F');
     std::cout << "this is the game" << std::endl;
@@ -21,11 +25,8 @@ int main ()
     std::cout<<dice::d100()<<std::endl;
     std::cout<<dice::d100()<<std::endl;
     std::cout<<dice::d100()<<std::endl;
-       std::cout<<dice::d100()<<std::endl;
-       std::cout<<dice::d100()<<std::endl;
-
-
-
+    std::cout<<dice::d100()<<std::endl;
+    std::cout<<dice::d100()<<std::endl;
 
     std::cout<<"bows damage min is"<< b.getDamageMin()<<std::endl;
     std::cout<<"bows effect is"<<b.getEffect()<<std::endl;
