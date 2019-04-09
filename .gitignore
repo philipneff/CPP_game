@@ -15,9 +15,11 @@
 # ignore hidden system files
 .DS_Store
 Thumbs.db
+*.swp
 
 # ignore scons compilation file
 .sconsign.dblite
 
 # ignore executables (will have to be compiled locally anyways for alternate operating systems)
+CatBalls
 *.exe
