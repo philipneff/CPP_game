@@ -20,11 +20,11 @@ namespace level{
 struct position{
 	int x;
 	int y;
-
 };
 
 class level
 {
+
 public:
 
 	/**
