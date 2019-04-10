@@ -23,3 +23,4 @@ Thumbs.db
 # ignore executables (will have to be compiled locally anyways for alternate operating systems)
 CatBalls
 *.exe
+*.out

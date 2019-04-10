@@ -6,7 +6,7 @@
 #include <fstream>
 #include "level.h"
 #include "./gameplay/dice.h"
-#include "./gamestate/gamestate.h"
+// #include "./gamestate/gamestate.h"
 
 int main ()
 {
@@ -16,7 +16,8 @@ int main ()
 
     srand(time(0));
 	level::level current;
-	current.loadLevel("/home/student/Desktop/CPP_game/levels/level1.txt");
+//	current.loadLevel("/home/student/Desktop/CPP_game/levels/level1.txt");
+	current.loadLevel("./levels/level1.txt");
 	current.drawLevel();
 	current.findOnLevel('F');
     std::cout << "this is the game" << std::endl;
